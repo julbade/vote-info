@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#vote').show();
     $("#submit").click(function() {
       var VoteNow = $("input:radio[name=flavor]:checked").val();
-      // $('#aftervote').show();
+      $('#aftervote').show();
       $(".canidate").append(VoteNow);
     });
   } else if (age === 17) {
