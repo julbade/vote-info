@@ -4,9 +4,11 @@ $(document).ready(function() {
 
   if (age > 18) {
     $('#vote').show();
-    $("#ballot").click(function() {
-    var submit = $("input:radio[name=flavor]:checked").val();
-    alert(submit);
+    $("#submit").click(function() {
+      var VoteNow = $("input:radio[name=flavor]:checked").val();
+      // $('#aftervote').show();
+      $(".canidate").append(VoteNow);
+    });
   } else if (age === 17) {
     $('#soonvote').show();
   } else {
@@ -16,4 +18,3 @@ $(document).ready(function() {
   event.preventDefault()
 
   });
-});

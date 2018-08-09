@@ -11,7 +11,6 @@
     <div class="container">
 
       <div id="vote">
-        <form id="ballot">
         <h1>VOTE</h1>
         <p>You're old enough to vote! Based on the location you entered. These are the canadiates you can vote for.</p>
         <div class="radio">
@@ -32,14 +31,16 @@
               Mark the guy
             </label>
           </div>
-
           <button id="submit" type="button" class="btn">Vote NOW!</button>
-        </form>
-      </div>
+        </div>
 
-      <div id="soonvote">
-        <p>You are almost old enough to vote! The first election you are eligable to vote in is DATE! Please make sure you are resgistered.</p>
-      </div>
+        <div id="aftervote">
+          <p>Congrats! You have voted for, <span class="canidate"></span>!</p>
+        </div>
+
+        <div id="soonvote">
+          <p>You are almost old enough to vote! The first election you are eligable to vote in is DATE! Please make sure you are resgistered.</p>
+        </div>
       <div id="novote">
         <h1>Sorry, you are not old enough</h1>
       </div>
